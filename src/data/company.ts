@@ -1,0 +1,20 @@
+export const companyDetails = {
+  name: "Sree Sampath Packers & Movers",
+  tagline: "Safe Moves • Stronger Tomorrow",
+  primaryMessage: "The Right Vehicle. The Right Team. A Safer Move.",
+  subMessage: "From compact local shifting to large-volume household and commercial transportation, choose the vehicle size that fits your move.",
+  phone1: "9866266199",
+  phone1Display: "+91 98662 66199",
+  phone2: "9494543838",
+  phone2Display: "+91 94945 43838",
+  whatsappNumber: "919866266199",
+  location: "Visakhapatnam, Andhra Pradesh, India",
+  googleRating: 4.8,
+  reviewCount: "85+",
+  experienceYears: "10+",
+  coverage: "Visakhapatnam Local, Andhra Pradesh & Pan-India Transportation",
+  logo: "/logo.png",
+  heroBg: "/hero-bg.png",
+  aboutBg: "/about-bg.png",
+  contactBg: "/contact-bg.png"
+}

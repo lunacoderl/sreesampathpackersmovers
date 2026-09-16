@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/((?!assets/|images/|service/|testimonials/|vehicals/|gallary/|logo.png|hero-bg.png|about-bg.png|contact-bg.png|favicon.svg|robots.txt|sitemap.xml|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
