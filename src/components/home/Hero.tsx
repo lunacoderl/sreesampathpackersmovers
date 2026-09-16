@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
     >
       {/* Top Value Headline Banner Container */}
       <div className="max-w-4xl mx-auto w-full text-center relative z-10">
-        <div className= "backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-white/90 shadow-2xl">
+        <div className=" rounded-3xl p-6 sm:p-10 border border-white/90 shadow-2xl">
           {/* Trust pill */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-orange-700 text-xs sm:text-sm font-bold mb-4 shadow-sm">
             <Truck className="w-4 h-4 text-orange-600" />
