@@ -4,16 +4,25 @@ import { ArrowLeft, CheckCircle, Truck, Phone, MessageSquare, ArrowRight } from 
 import { servicesData } from '../../data/services'
 import { vehicleFleet } from '../../data/vehicles'
 import { companyDetails } from '../../data/company'
+import { SeoHead } from '../common/SeoHead'
+import { siteSeo } from '../../siteSeo'
 
 export const ServiceDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
   const navigate = useNavigate()
 
   const service = servicesData.find((s) => s.slug === slug)
+  const matchedRoute = siteSeo.routes.find((r) => r.path === `/services/${slug}`)
 
   if (!service) {
     return (
       <div className="min-h-[70vh] flex flex-col items-center justify-center p-6 text-center">
+        <SeoHead
+          title="Service Not Found | Sree Sampath Packers & Movers"
+          description="The requested moving service could not be found. View our complete moving and packing services in Visakhapatnam."
+          canonicalPath={`/services/${slug || 'not-found'}`}
+          noIndex={true}
+        />
         <div className="w-16 h-16 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center mb-4">
           <Truck className="w-8 h-8" />
         </div>
@@ -33,6 +42,9 @@ export const ServiceDetailPage: React.FC = () => {
 
   const suitableVehicle = vehicleFleet.find((v) => v.id === service.suitableVehicleId) || vehicleFleet[1]
 
+  const pageTitle = matchedRoute?.title || `${service.title} in Visakhapatnam | Sree Sampath Packers & Movers`
+  const pageDescription = matchedRoute?.description || `${service.shortDescription} Safe packing, dedicated moving staff, and direct pan-India transportation.`
+
   const scrollToQuote = () => {
     navigate('/#quote')
     setTimeout(() => {
@@ -43,6 +55,11 @@ export const ServiceDetailPage: React.FC = () => {
 
   return (
     <div className="bg-slate-50 min-h-screen pb-20">
+      <SeoHead
+        title={pageTitle}
+        description={pageDescription}
+        canonicalPath={`/services/${service.slug}`}
+      />
       {/* Breadcrumb & Navigation */}
       <div className="bg-white border-b border-slate-200 py-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between text-xs sm:text-sm">

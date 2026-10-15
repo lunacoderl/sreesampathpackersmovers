@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { SeoHead } from '../components/common/SeoHead'
+import { siteSeo } from '../siteSeo'
 import { Hero } from '../components/home/Hero'
 import { TrustRow } from '../components/home/TrustRow'
 import { VehicleFleetSection } from '../components/home/VehicleFleetSection'
@@ -19,8 +21,15 @@ export const Home: React.FC = () => {
     setSelectedVehicleForQuote(vehicleName)
   }
 
+  const homeSeo = siteSeo.routes[0]
+
   return (
     <main>
+      <SeoHead
+        title={homeSeo.title}
+        description={homeSeo.description}
+        canonicalPath="/"
+      />
       {/* 1. Hero with uncropped natural visual */}
       <Hero />
 
