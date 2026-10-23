@@ -1,45 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.sreesampathpackersmovers.online/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.sreesampathpackersmovers.online/hero-bg.png</image:loc>
+      <image:title>Sree Sampath Packers &amp; Movers Visakhapatnam</image:title>
+      <image:caption>Professional Household Shifting, Office Relocation &amp; Transport Services</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sreesampathpackersmovers.online/logo.png</image:loc>
+      <image:title>Sree Sampath Packers &amp; Movers Official Logo</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sreesampathpackersmovers.online/services/household-shifting</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sreesampathpackersmovers.online/service/service-01.webp</image:loc>
+      <image:title>Household Shifting Services</image:title>
+      <image:caption>Safe home relocation with multi-layer packing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sreesampathpackersmovers.online/services/office-relocation</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sreesampathpackersmovers.online/service/service-02.webp</image:loc>
+      <image:title>Office Relocation Services</image:title>
+      <image:caption>Corporate office moving and IT asset relocation</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sreesampathpackersmovers.online/services/packing-unpacking</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sreesampathpackersmovers.online/service/service-03.webp</image:loc>
+      <image:title>Packing &amp; Unpacking Services</image:title>
+      <image:caption>High-grade bubble wrap and corrugated box packing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sreesampathpackersmovers.online/services/local-shifting</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sreesampathpackersmovers.online/service/service-04.webp</image:loc>
+      <image:title>Local Shifting in Visakhapatnam</image:title>
+      <image:caption>Same-day local moving within Vizag and nearby areas</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sreesampathpackersmovers.online/services/domestic-relocation</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sreesampathpackersmovers.online/service/service-05.webp</image:loc>
+      <image:title>Domestic Relocation Services</image:title>
+      <image:caption>All-India interstate moving with containerized vehicles</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sreesampathpackersmovers.online/services/commercial-goods-transportation</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sreesampathpackersmovers.online/service/service-06.webp</image:loc>
+      <image:title>Commercial Goods Transportation</image:title>
+      <image:caption>Industrial machinery and bulk logistics transport</image:caption>
+    </image:image>
   </url>
 </urlset>

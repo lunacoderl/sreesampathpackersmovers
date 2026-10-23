@@ -41,3 +41,10 @@
 ### Verification
 - `npm run build`: Verified build succeeds with zero errors.
 - Sitemap URL check: Sitemaps contain 7 valid absolute URLs, 0 relative paths, 0 hash fragments.
+
+---
+
+## [2026-10-23] - GSC Page Indexing & Vercel SPA Rewrite Overhaul
+- **Fixed Root Cause of GSC 404 Validation Failure**: `vercel.json` was previously restricting rewrites to only `/` and `/services/:slug`, causing all other navbar subpaths (`/services`, `/about`, `/contact`, `/faq`) to return raw HTTP 404 errors. Updated `vercel.json` to standard SPA rewrite `{ "source": "/(.*)", "destination": "/index.html" }` so React's `<NotFound />` component handles unrecognized routes cleanly with `noindex`.
+- **Enriched Sitemap with Google Images**: Added `<image:image>` metadata for brand logo and all 6 individual service webp images in `public/sitemap.xml`.
+
